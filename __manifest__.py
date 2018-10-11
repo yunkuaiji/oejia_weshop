@@ -8,6 +8,9 @@
     'website': 'http://www.oejia.net/',
     'application': True,
     'depends': ['base', 'mail', 'sale'],
+    'external_dependencies': {
+        'python': ['Crypto', 'xmltodict', 'itsdangerous'],
+    },
     'data': [
         'security/ir.model.access.csv',
 
@@ -34,4 +37,8 @@
     ],
     'demo': [
     ],
+    'images': [],
+    'description': """oejia_weshop 是 Odoo 对接微信小程序实现的商城应用
+    """,
+    'license': 'GPL-3',
 }
